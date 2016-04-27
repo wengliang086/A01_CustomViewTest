@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cart="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    cart:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.test.customview.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <com.test.customview.PriceView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        cart:decimalSize="16dp"
+        cart:intSize="20dp"
+        cart:moneySize="14dp"
+        cart:strike="true"
+        cart:textColor="#ff0000"
+        cart:value="￥12.345" />
+
+    <com.test.customview.CustomImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        cart:image="@drawable/ic_launcher"
+        cart:imageScaleType="center"
+        cart:titleText="测试标题" />
+
+    <com.test.customview.RoundProgressBar
+        android:id="@+id/roundProgressBar2"
+        android:layout_width="80dip"
+        android:layout_height="80dip"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@+id/roundProgressBar1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="78dp"
+        cart:roundColor="#D1D1D1"
+        cart:roundProgressColor="@android:color/black"
+        cart:roundWidth="10dip"
+        cart:textColor1="#9A32CD"
+        cart:textIsDisplayable="false"
+        cart:textSize1="18sp" />
+</LinearLayout>

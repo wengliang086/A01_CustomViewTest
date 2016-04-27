@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="titleText" format="string" />
+    <attr name="image" format="reference" />
+    <attr name="imageScaleType">
+        <enum name="fillXY" value="0" />
+        <enum name="center" value="1" />
+    </attr>
+    <declare-styleable name="CustomImageView">
+        <attr name="titleText" />
+        <attr name="image" />
+        <attr name="imageScaleType" />
+    </declare-styleable>
+    <!-- 自定义价格视图 -->
+    <declare-styleable name="CartPriceValue">
+        <attr name="value" format="reference|string" />
+        <attr name="textColor" format="reference|color" />
+        <attr name="textSize" format="reference|dimension" />
+        <attr name="moneySize" format="reference|dimension" />
+        <attr name="intSize" format="reference|dimension" />
+        <attr name="decimalSize" format="reference|dimension" />
+        <attr name="strike" format="boolean" />
+        <attr name="withEndZero" format="boolean" />
+    </declare-styleable>
+    <!--自定义属性（带进度的圆形进度条）-->
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color"/>
+        <attr name="roundProgressColor" format="color"/>
+        <attr name="roundWidth" format="dimension" />
+        <attr name="textColor1" format="color" />
+        <attr name="textSize1" format="dimension" />
+        <attr name="max" format="integer" />
+        <attr name="textIsDisplayable" format="boolean" />
+        <attr name="style">
+            <enum name="STROKE" value="0" />
+            <enum name="FILL" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>
